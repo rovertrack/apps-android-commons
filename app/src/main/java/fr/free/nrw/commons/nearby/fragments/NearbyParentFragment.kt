@@ -1564,7 +1564,7 @@ class NearbyParentFragment : CommonsDaggerSupportFragment(),
                             updatedPlace.longDescription
                         marker.showInfoWindow()
                         presenter!!.handlePinClicked(updatedPlace)
-                        savePlaceToDatabase(place)
+                        savePlaceToDatabase(updatedPlace)
                         val icon = getDrawable(
                             requireContext(),
                             getIconFor(updatedPlace, isBookMarked)
